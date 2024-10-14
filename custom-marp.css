@@ -1,0 +1,103 @@
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  header {
+    display: flex;
+    height: 200px;
+    width: 95%;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #bbb;
+  }
+  header img {
+    margin: 30px;
+    height: 30px;
+  }
+  header img {  margin-top: -0px !important; }
+  section h2, section h1, section h3, p{
+    color: #555555;
+  }
+  footer div.subtitle_position{
+    background-color: #eee;
+    height: 50px;
+    width: 800px;
+    margin-left: 50px;
+  }
+  strong{
+    text-decoration: underline;
+    text-underline-offset: -0.3em;
+    text-decoration-skip-ink: none;
+    text-decoration-color: #39ffbe;
+    text-decoration-thickness: 0.5rem;
+  }
+  h1 { color: #21b0fe;  }
+  section::after { font-size: 1rem !important; }
+  img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+  }
+  div.breadcrumbs{
+  }
+  div.breadcrumbs{
+    position: fixed;
+    top: 20px;
+    left: 60px;
+    font-size: 15px;
+    color: #666;
+  }
+  p, table, td, th { font-size: 0.9em;}
+
+  .grid > p > img {  margin: auto; }
+  .grid > p > br {  display: none; }
+  .grid > p > img { margin: auto; }
+  .grid > p > br { display: none; }
+  .grid > p { display: grid; grid-column-gap: 1rem; grid-row-gap: 1rem; }
+  .g2x1 > p { grid-template-columns: 1fr 1fr }
+  .g3x1 > p { grid-template-columns: 1fr 1fr 1fr; }
+  .g4x1 > p { grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .g5x1 > p { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+  .g6x1 > p { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .g7x1 > p { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .g3x2 > p { 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .grid > p > img {
+    margin: auto;
+  }
+  .grid > p > br {
+    display: none;
+  }
+  section, section p{
+    font-size: 1.4rem !important;
+  }
+  .row1AsB > p {
+    grid-template-columns: 1fr 40px 1fr !important;
+  }
+  .row1AsBsC > p {
+    grid-template-columns: 1fr 40px 1fr 40px 1fr !important;
+  }
+  code {
+    font-family: monospace !important;
+    font-weight: 600;
+    color: #800fa9;
+  }
+  @keyframes marp-transition-dissolve {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  section.content-start-top { justify-content: flex-start; }
+  section:after {
+    height: 34px !important;
+    color: #ccc !important;
+    position: absolute !important;
+    left: 60px !important;
+    margin-left: 15px;
+    z-index: 1 !important;
+  }
